@@ -14,3 +14,13 @@ let gradosFahrenheit = (gradosCelsius * 9/5) +32;
 
 console.log("gradosFahrenheit: ",gradosFahrenheit);
 
+// VERIFICADOR DE CONTRASENIA
+
+const contrasenaCorrecta = "ss";
+let intentoDeUsuario = "nn";
+let escontraseniaValida = false;
+
+if(contrasenaCorrecta === intentoDeUsuario){
+    esContraseniaValida = true;
+}
+console.log("esContraseniaValida: ", escontraseniaValida);

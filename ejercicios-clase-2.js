@@ -33,6 +33,15 @@ const usuario ={
     estaRestringido: false,
     cursos: ["Node.js","Git","GitHub","javascript"]
 };
-console.log(usuario.nombre);
-console.log(usuario.cursos[0]);
+console.log("Nombre: ",usuario.nombre);
+console.log("Curso: ",usuario.cursos[0]);
 
+// EVALUADOR DE ACCESO A EVENTO
+
+let edadPersona = 45;
+let tieneTicket = true;
+let puedeAcceder = false;
+if(tieneTicket === true && edadPersona > 18){
+    puedeAcceder = true;
+};
+console.log("puedeAcceder: ",puedeAcceder);

@@ -24,3 +24,15 @@ if(contrasenaCorrecta === intentoDeUsuario){
     esContraseniaValida = true;
 }
 console.log("esContraseniaValida: ", escontraseniaValida);
+
+// PERFIL DE USUARIO 
+
+const usuario ={
+    nombre: "Bautista",
+    edad: 23,
+    estaRestringido: false,
+    cursos: ["Node.js","Git","GitHub","javascript"]
+};
+console.log(usuario.nombre);
+console.log(usuario.cursos[0]);
+

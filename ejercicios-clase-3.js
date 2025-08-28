@@ -1,9 +1,3 @@
-//Control de Flujo: Crea una función que reciba una puntuación (0-100) y devuelva una calificación usando if/else:
-// 90-100: "A"
-// 80-89: "B"
-// 70-79: "C"
-// <70: "F"
-
 //CONTROL DE FLUJO
 
 function controlFlujo(puntuacion){

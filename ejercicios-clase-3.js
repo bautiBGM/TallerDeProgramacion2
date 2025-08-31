@@ -67,7 +67,31 @@ const libro ={
     }
 }
 libro.mostrarInfo();
+
+
 // 5) Contador con Closure: Crea una función crearJuego que use un closure para mantener un puntaje privado.
 // Debe devolver un objeto con dos métodos: sumarPunto() y mostrarPuntaje().
+
+function crearJuego(){
+    let puntos=0;
+    return {
+        sumarPunto: function(){
+            puntos++;
+        },
+        mostrarPuntaje: function(){
+            console.log("Total de puntos sumados hasta ahora: ", puntos);
+        }
+    }
+}
+
+const jugador1 = crearJuego();
+const jugador2 = crearJuego();
+
+jugador1.sumarPunto()
+jugador1.sumarPunto()
+jugador1.mostrarPuntaje()
+jugador2.sumarPunto()
+jugador2.mostrarPuntaje()
+
 
 // 6) Iterar Objeto: Crea una función mostrarPropiedades que reciba un objeto e imprima cada una de sus propiedades y valores en la consola.

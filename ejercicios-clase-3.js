@@ -95,3 +95,16 @@ jugador2.mostrarPuntaje()
 
 
 // 6) Iterar Objeto: Crea una función mostrarPropiedades que reciba un objeto e imprima cada una de sus propiedades y valores en la consola.
+
+const persona ={
+    nombre: "leo",
+    apellido: "messi",
+    anioNacimiento: 1984,
+}
+function mostrarPropiedades(objeto){
+    for (let clave in objeto) {
+  console.log(`${clave}: ${objeto[clave]}`);
+}
+}
+
+mostrarPropiedades(persona)

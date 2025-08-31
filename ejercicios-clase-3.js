@@ -57,6 +57,16 @@ console.log("calcular: ",calculadora(10,5,'+'));
 // 4) Objeto "Libro": Crea un objeto libro con propiedades titulo, autor, año y un método resumen que imprima "El libro [titulo] 
 // fue escrito por [autor] en el año [año]".
 
+const libro ={
+    titulo: "pedrito y sus aventuras",
+    autor: "bautista gayoso",
+    anio: 2020,
+    mostrarInfo: function(){
+        console.log("El libro ",this.titulo, " fue escrito por ",this.autor, " en el anio ", this.anio);
+        console.log(`El libro: ${this.titulo}, fue escrito por: ${this.autor}, en el anio: ${this.anio}`);
+    }
+}
+libro.mostrarInfo();
 // 5) Contador con Closure: Crea una función crearJuego que use un closure para mantener un puntaje privado.
 // Debe devolver un objeto con dos métodos: sumarPunto() y mostrarPuntaje().
 

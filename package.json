@@ -1,0 +1,23 @@
+{
+  "name": "tallerdeprogramacion2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  
+  "scripts": {
+    "start": "node .",
+    "dev": "node --watch .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bautiBGM/TallerDeProgramacion2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bautiBGM/TallerDeProgramacion2/issues"
+  },
+  "homepage": "https://github.com/bautiBGM/TallerDeProgramacion2#readme"
+}

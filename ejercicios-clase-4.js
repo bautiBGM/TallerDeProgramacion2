@@ -52,3 +52,21 @@ console.log(producto);
 // Define un array con 3 URLs de la API de JSONPlaceholder que apunten a diferentes usuarios (ej: /users/6, /users/7, /users/8).
 // Usa Promise.all y fetch para obtener los datos de los tres usuarios en paralelo.
 // Imprime en la consola el nombre de cada uno de los usuarios.
+
+const urls = [
+    'https://jsonplaceholder.typicode.com/users/1',
+    'https://jsonplaceholder.typicode.com/users/2',
+    'https://jsonplaceholder.typicode.com/users/3'
+];
+
+const usuariosEnParalelo = async () => {
+    try{
+    const promesa = urls.map(url => fetch(url).then(res => res.json()));
+    const usuario = await Promise.all(promesa);
+    usuario.forEach(user => console.log(user.name));
+    }catch(error){
+        console.error('una de las promesas fallo ', error);     
+    } 
+}
+
+usuariosEnParalelo();
